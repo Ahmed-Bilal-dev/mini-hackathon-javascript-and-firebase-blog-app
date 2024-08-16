@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Ahmed Bilal</title>
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-image-wrapper">
+            <img src="/assets/images/login-image.png" alt="Login Image" class="login-image">
+            <div class="form-container">
+                <form class="login-form">
+                    <h2 class="form-title">Login</h2>
+                    
+                    <!-- Gmail Field -->
+                    <div class="form-group">
+                        <label for="gmail">Gmail</label>
+                        <input type="email" id="gmail" name="gmail" placeholder="Enter your Gmail address" required>
+                    </div>
+            
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+            
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">Login</button>
+                    </div>
+            
+                    <!-- Sign Up Link -->
+                    <div class="form-group text-center">
+                        <p class="signup-link">Don't have an account? <a href="/auth/signup/signup.html" class="btn-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="/firebase.js" type="module"></script>
+</body>
+</html>

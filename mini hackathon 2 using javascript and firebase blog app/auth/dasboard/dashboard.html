@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Ahmed Bilal</title>
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#">
+            Ahmed Bilal
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav buttons">
+              <a class="btn btn-outline-light me-3" href="#">Sign Up</a>
+              <a class="btn btn-light" href="#">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="form-container">
+        <form class="blog-form">
+          <h2 class="form-title">Create a New Blog Post</h2>
+          
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+      
+          <!-- Category Field -->
+          <div class="form-group">
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category" placeholder="Enter the category" required>
+          </div>
+      
+          <!-- Title Field -->
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter the blog title" required>
+          </div>
+      
+          <!-- Description Field -->
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="5" placeholder="Enter the blog description" required></textarea>
+          </div>
+      
+          <!-- Submit Button -->
+          <div class="form-group">
+            <button type="submit" class="btn-submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Table to display form data -->
+      <div class="table-container">
+        <h2 class="table-title">Blog Posts</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>Technology</td>
+              <td>Latest Trends in Tech</td>
+              <td>A comprehensive overview of the latest trends in technology.</td>
+              <td>
+                <a href="#" class="btn btn-edit btn1">Edit</a>
+                <a href="#" class="btn btn-delete">Delete</a>
+              </td>
+            </tr>
+            <!-- Additional rows can be added here -->
+          </tbody>
+        </table>
+      </div>
+      
+      
+
+
+      <script src="/assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+      <script src="/firebase.js" type="module"></script>
+</body>
+</html>

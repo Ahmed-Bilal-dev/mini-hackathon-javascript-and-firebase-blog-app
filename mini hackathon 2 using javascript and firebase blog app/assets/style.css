@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* header style ...............................................................................*/
+.navbar {
+    background-color: #343a40;
+  }
+  
+
+  .navbar .logo {
+    font-size: 1.8rem;     
+    font-weight: bold;       
+    color: #ffffff;          
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  /* Buttons styling */
+  .navbar .buttons a {
+    padding: 0.5rem 1rem;   
+    border-radius: 20px;    
+    font-weight: bold;      
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  /* SignUp button style */
+  .navbar .buttons .btn-outline-light {
+    border-color: #ffffff;      
+    color: #ffffff;             
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .buttons .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #343a40;             
+  }
+  
+  /* Login button style */
+  .navbar .buttons .btn-light {
+    background-color: #ffffff;  
+    color: #343a40;             
+    transition: background-color 0.3s ease; 
+  }
+  
+  .navbar .buttons .btn-light:hover {
+    background-color: #f8f9fa; 
+  }
+  
+  .navbar-toggler-icon{
+    color: white;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+
+    /* body section or herp section .........................................................*/
+
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+   }
+
+
+
+/* form and table style .....................................................................*/
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Title */
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Form Labels */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  /* Input Focus Effect */
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+  }
+  
+  /* Submit Button */
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table Container */
+  .table-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Title */
+  .table-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Table Styling */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Action Buttons */
+  .btn {
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+.btn1{
+    padding: 5px 18px;
+    margin-left: 05px;
+    margin-bottom: 5px;
+  }
+  
+  .btn-edit {
+    background-color: #28a745; /* Green for Edit */
+  }
+  
+  .btn-edit:hover {
+    background-color: #218838;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545; /* Red for Delete */
+    margin-left: 5px;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333;
+  }
+ 
+/* signup form style .......................................................................*/
+  
+  /* Container for layout */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Wrapper for form and image */
+  .form-image-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Image styling */
+  .signup-image {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Form container styling */
+  .form-container {
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;  
+  }
+  
+  /* Form Title */
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Form Labels */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  /* Input Focus Effect */
+  .form-group input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Submit Button */
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Login form style .....................................................................*/
+
+  /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for layout */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Wrapper for form and image */
+  .form-image-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Image styling */
+  .login-image {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Form container styling */
+  .form-container {
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;  
+}
+  
+  /* Form Title */
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Form Labels */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  /* Input Focus Effect */
+  .form-group input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Submit Button */
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Sign Up Link */
+  .signup-link {
+    font-size: 0.9rem;
+  }
+  
+  .btn-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+  
